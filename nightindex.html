@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>도시의 소리를 찾아서2</title>
+	<style type="text/css">
+		@font-face { font-family: 'KOMACON'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/KOMACON.woff') format('woff'); font-weight: normal; font-style: normal; }
+		body{background-image:url(back.jpg);margin: 0;background-repeat: no-repeat;background-size: 100%}
+		h1{margin:auto;text-align: center;color: white;margin-top: 100px;font-family: 'KOMACON';}
+		.thum{height:200px; width: 300px;opacity: 0;display: block;float: left;margin-left:160px;margin-top: 50px;overflow: hidden}
+		.thum:hover{opacity: 1;}
+	</style>
+</head>
+
+<body>
+	<h1>밤의 소리를 찾아 들어보세요!</h1>
+ <img src="night.jpg" class="thum" id="a">
+ <audio src="PA_Announcement_Close.mp3" loop id="aa"></audio>
+ <img src="bar.jpg" class="thum" id="b">
+ <audio src="Nighttime_Stroll.mp3" loop id="bb"></audio>
+ <img src="baby.jpg" class="thum" id="c">
+ <audio src="Babies_Cry.mp3" loop id="cc"></audio>
+ <img src="fun.jpg" class="thum" id="d">
+ <audio src="Summer_Beach_Ambience.mp3" loop id="dd"></audio>
+ <img src="rain.jpg" class="thum" id="e">
+ <audio src="Rain_Water_Dripping_Softly.mp3" loop id="ee"></audio>
+ <img src="car.jpg" class="thum" id="f">
+ <audio src="City_Traffic.mp3" loop id="ff"></audio>
+
+ <script type="text/javascript">
+ 	var astate = "off";
+ 	a.onclick = function(){
+ 		if (astate == "off") {a.style.opacity = "1"; aa.play();astate = "on";aa.volume = 0.6;}
+ 		else  {a.style.opacity = "0"; aa.pause();astate = "off";}
+ 	}
+
+ 	var bstate = "off";
+ 	b.onclick = function(){
+ 		if (bstate == "off") {b.style.opacity = "1"; bb.play();bstate = "on";}
+ 		else  {b.style.opacity = "0"; bb.pause();bstate = "off";}
+ 	}
+
+ 	var cstate = "off";
+ 	c.onclick = function(){
+ 		if (cstate == "off") {c.style.opacity = "1"; cc.play();cstate = "on"; cc.volume = 0.2;}
+ 		else  {c.style.opacity = "0"; cc.pause();cstate = "off";}
+ 	}
+
+ 	var dstate = "off";
+ 	d.onclick = function(){
+ 		if (dstate == "off") {d.style.opacity = "1"; dd.play();dstate = "on";}
+ 		else  {d.style.opacity = "0"; dd.pause();dstate = "off";}
+ 	}
+
+ 	var estate = "off";
+ 	e.onclick = function(){
+ 		if (estate == "off") {e.style.opacity = "1"; ee.play();estate = "on";}
+ 		else  {e.style.opacity = "0"; ee.pause();estate = "off";}
+ 	}
+ 	var fstate = "off";
+ 	f.onclick = function(){
+ 		if (fstate == "off") {f.style.opacity = "1"; ff.play();fstate = "on";}
+ 		else  {f.style.opacity = "0"; ff.pause();fstate = "off"; ff.volume = 0.05;}
+ 	}
+ </script>
+</body>
+</html>
